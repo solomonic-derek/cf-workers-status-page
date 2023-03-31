@@ -17,8 +17,8 @@ settings:
 monitors:
   - id: changirecommends-com # unique identifier
     name: www.changirecommends.com
-    description: '' # default=empty
-    url: 'https://www.changirecommends.com' # URL to fetch
+    description: 'Changi Recommends' # default=empty
+    url: 'https://www.changirecommends.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -26,7 +26,7 @@ monitors:
 
   - id: horme-com-sg
     name: www.horme.com.sg
-    description: ''
+    description: 'Horme Online Store'
     url: 'https://www.horme.com.sg/'
     method: GET
     expectStatus: 200
