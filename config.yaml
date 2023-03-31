@@ -1,6 +1,6 @@
 settings:
   title: 'Solomonic Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://cf-workers-status-page-production.solomonic.workers.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,10 +15,10 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: changirecommends-com-sg # unique identifier
-    name: www.changirecommends.com.sg
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://www.changirecommends.com.sg' # URL to fetch
+  - id: changirecommends-com # unique identifier
+    name: www.changirecommends.com
+    description: '' # default=empty
+    url: 'https://www.changirecommends.com' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -26,7 +26,7 @@ monitors:
 
   - id: horme-com-sg
     name: www.horme.com.sg
-    description: 'Built for anything connected to the Internet.'
+    description: ''
     url: 'https://www.horme.com.sg/'
     method: GET
     expectStatus: 200
