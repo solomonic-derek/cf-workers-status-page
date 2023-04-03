@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: changirecommends-com # unique identifier
-    name: www.changirecommends.com
+    name: www-changirecommends-com
     description: 'Changi Recommends' # default=empty
     url: 'https://www.changirecommends.com/' # URL to fetch
     method: GET # default=GET
@@ -25,7 +25,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: horme-com-sg
-    name: www.horme.com.sg
+    name: www-horme-com-sg
     description: 'Horme Online Store'
     url: 'https://www.horme.com.sg/'
     method: GET
